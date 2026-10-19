@@ -1,0 +1,26 @@
+GET http://localhost:8080/api/users HTTP/1.1
+
+
+###
+POST http://localhost:8080/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "test",
+    "email": "mail@mail.com",
+    "password": "123456789"
+}
+
+###
+PATCH http://localhost:8080/api/users/9a8fbd17-17a4-4558-836c-9d62007b77e0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "test",
+    "email": "mail@mail.com",
+    "password": "123456789"
+}
+
+###
+
+DELETE http://localhost:8080/api/users/9a8fbd17-17a4-4558-836c-9d62007b77e0
